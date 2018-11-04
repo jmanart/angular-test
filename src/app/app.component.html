@@ -1,0 +1,13 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <div>
+    <h3>Please log into the application:</h3>
+    <app-login *ngIf="!isLoggedIn"></app-login>
+    <app-logout *ngIf="isLoggedIn"></app-logout>
+  </div>
+</div>
+
+
+<router-outlet></router-outlet>
