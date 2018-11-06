@@ -34,34 +34,34 @@ The versions used:
 * yarn v1.10.1
 
 
-## Exercises.
+## Exercises
 
 - Given the current state of the application, write a new component 
   that using [ngx-datatable](https://github.com/swimlane/ngx-datatable) 
   displays a list of notes.
  * The notes are identified by a timestamp but also contain the body and a title that always 
-   is a contramption of the body.
- * When there are no notes, a message with no notes should be displayed.
+   is a truncation of the body.
+ * When there are no notes, a message should be displayed saying there are no notes.
  * The notes must ONLY be allowed to be ordered by date in a descending fashion.
 
 - Implement a service that will use the browser memory to store / retrieve and update the notes.
 
 - Add a new button to the notes list that will save the notes stored in the local cache to a backend.
 
-- Write an acceptance test for a node backend for the POST and GET methods of an endpoint that would process the previous information.
+- Write (or describe in pseudocode) an acceptance test for a node backend for the POST and GET methods of an endpoint that would process the previous information.
 
 
 ## Expectations
 
 - Commits at the end of every phase
-- Test for every public method exposed
+- Tests for public methods
 - No unnecessary comments
-- documentation for the methods
+- Documentation for the methods
 - Linting
 
 
 ## Additional questions
 
-- What security concerns does the architecture of the application currently hold
-- What would be a possible solution to a multiuser access on the same browser.
+- What security concerns does the architecture of the application currently hold.
+- What would be a possible solution to allow multiple users to have separate notes on the same browser.
 - Possible solutions to enabling push notifications.
